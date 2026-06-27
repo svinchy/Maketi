@@ -1,0 +1,21 @@
+{
+  "name": "maketi.ge",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "smbls start",
+    "start": "smbls start",
+    "maketi:local": "node server.mjs",
+    "build": "smbls runner build .",
+    "frank": "smbls frank to-json ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "smbls": "^3.14.17",
+    "three": "^0.184.0"
+  }
+}
