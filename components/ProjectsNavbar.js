@@ -11,7 +11,6 @@ export const ProjectsNavbar = {
   padding: 'A C',
   margin: '- auto',
   width: 'fit-content',
-  maxWidth: 'calc(100vw - var(--spacing-C) * 2)',
   opacity: '1',
   transform: 'translate3d(0, 0, 0)',
   transition: 'opacity 640ms cubic-bezier(.19, 1, .22, 1), transform 900ms cubic-bezier(.19, 1, .22, 1)',

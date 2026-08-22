@@ -1,0 +1,7 @@
+export * from './services.js'
+export * from './intro.js'
+export * from './pageScroll.js'
+export * from './smoothScroll.js'
+export * from './projects.js'
+export * from './about.js'
+export * from './footer.js'

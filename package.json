@@ -5,10 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "smbls start",
-    "start": "smbls start",
-    "maketi:local": "node server.mjs",
-    "build": "smbls runner build .",
+    "dev": "node scripts/dev-server.mjs",
+    "start": "node scripts/dev-server.mjs",
+    "dev:smbls": "smbls start",
+    "build": "smbls runner build index.js",
     "frank": "smbls frank to-json ."
   },
   "keywords": [],

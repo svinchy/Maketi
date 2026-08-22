@@ -10,11 +10,21 @@ export const ArrowButton = {
   cursor: 'pointer',
 
   Img: {
-    src: (el) => el.context.files.upArrow.src,
-    alt: 'Arrow up',
+    tag: 'span',
+    'aria-hidden': 'true',
     boxSize: 'C1 C1',
-    objectFit: 'contain',
+    display: 'block',
+    background: 'coralDark',
     pointerEvents: 'none',
-    filter: 'brightness(0) saturate(100%) invert(66%) sepia(61%) saturate(1644%) hue-rotate(321deg) brightness(103%) contrast(101%)'
+    style: {
+      WebkitMaskImage: (el) => `url("${el.context.files.upArrow.src}")`,
+      maskImage: (el) => `url("${el.context.files.upArrow.src}")`,
+      WebkitMaskRepeat: 'no-repeat',
+      maskRepeat: 'no-repeat',
+      WebkitMaskPosition: 'center',
+      maskPosition: 'center',
+      WebkitMaskSize: 'contain',
+      maskSize: 'contain'
+    }
   }
 }

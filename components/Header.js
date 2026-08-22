@@ -17,7 +17,7 @@ export const Header = {
   },
 
   H3: {
-    text: 'მაკეტი',
+    text: '{{ brand.title }}',
     color: 'black',
     fontSize: 'D',
     lineHeight: '1',

@@ -3,6 +3,6 @@ export default {
   black: '#000000',
   coral: '#FF855B',
   peach: '#F4A978',
-  coralDark: '#FF7C5B',
+  coralDark: '#E15C55',
   transparent: 'rgba(0, 0, 0, 0)'
 }

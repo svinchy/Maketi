@@ -1,1 +1,5 @@
-export {}
+export * from './Banner.js'
+export * from './Services.js'
+export * from './Projects.js'
+export * from './About.js'
+export * from './Footer.js'

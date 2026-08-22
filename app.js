@@ -1,5 +1,6 @@
 export default {
   metadata: {
-    title: 'Maketi'
+    title: 'Maketi',
+    favicon: 'logo'
   }
 }

@@ -6,12 +6,15 @@ export const ScrollbarLine = {
   position: 'fixed',
   right: 'Z',
   top: (el, s) => `${s.progress}%`,
-  transform: (el, s) => `translateY(-${s.progress}%)`,
-  width: 'W',
-  height: 'B1',
-  background: 'black',
+  transform: (el, s) => `translate3d(0, -${s.progress}%, 0) rotate(${s.progress * 3.6}deg)`,
+  width: '0.4375rem',
+  height: '0.4375rem',
+  marginTop: 'calc(C + E1)',
+  borderRadius: '0',
+  background: 'coralDark',
   zIndex: '100',
   pointerEvents: 'none',
+  'data-maketi-scrollbar': 'true',
 
   onInit: (el, s) => {
     const runtimeWindow = el.context.window || window

@@ -1,4 +1,8 @@
 const variantGroup = (title, category, options) => ({
+  scope: {
+    category: category
+  },
+
   display: 'flex',
   flow: 'y',
   gap: 'Z',
@@ -73,7 +77,7 @@ export const HouseModelSection = {
   Stage: {
     position: 'relative',
     width: '100%',
-    minHeight: 'min(720px, 82vh)',
+    minHeight: 'min(45rem, 82vh)',
     overflow: 'hidden',
     background: 'cream',
     'data-maketi-house-model': 'true',
@@ -93,8 +97,8 @@ export const HouseModelSection = {
     position: 'absolute',
     right: 'B1',
     top: 'B1',
-    width: 'min(300px, calc(100% - 64px))',
-    maxHeight: 'calc(100vh - 64px)',
+    width: 'min(18.75rem, calc(100% - 4rem))',
+    maxHeight: 'calc(100vh - 4rem)',
     overflowY: 'auto',
     display: 'flex',
     flow: 'y',
@@ -111,7 +115,7 @@ export const HouseModelSection = {
       margin: '0',
       color: 'black',
       fontFamily: 'ALKTallMtavruli',
-      fontSize: '64px',
+      fontSize: 'D',
       fontWeight: '400',
       lineHeight: '.9'
     },

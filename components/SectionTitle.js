@@ -23,7 +23,6 @@ export const SectionTitle = {
     bottom: 'X',
     zIndex: '1',
     margin: '0',
-    lineHeight: '1em',
     color: 'black',
     fontSize: 'I',
     fontWeight: '400',

@@ -3,8 +3,8 @@ export const ProjectItem = {
   display: 'flex',
   flow: 'y',
   gap: 'B',
-  width: 'min(1120px, 100%)',
-  maxWidth: '88vw',
+  width: 'min(70rem, 100%)',
+  maxWidth: '79.2rem',
   'data-maketi-project-item': 'true',
 
   Media: {
@@ -65,10 +65,10 @@ export const ProjectItem = {
       childProps: (childEl, childState) => {
         const projectState = childEl.parent.parent.parent.state || {}
         const activeIndex = projectState.index || 0
-        const size = childState.index === activeIndex ? '26px' : childState.index === 1 ? '18px' : '14px'
+        const size = childState.index === activeIndex ? '1.625rem' : childState.index === 1 ? '1.125rem' : '0.875rem'
 
         return {
-          background: 'coral',
+          background: 'coralDark',
           borderRadius: '50%',
           flexShrink: '0',
           width: size,

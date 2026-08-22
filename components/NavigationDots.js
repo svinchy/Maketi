@@ -5,7 +5,7 @@ export const NavigationDots = {
   childrenAs: 'state',
   childExtends: 'Box',
   childProps: (el, s) => ({
-    background: 'coral',
+    background: 'coralDark',
     borderRadius: '50%',
     flexShrink: '0',
     boxSize: s.active ? 'B B' : s.boxSize,

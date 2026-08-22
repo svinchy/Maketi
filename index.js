@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js'
 import app from './app.js'
 import context from './context.js'
+import { setupServicesEffect } from './effects/index.js'
 
 create(app, context)
 
@@ -999,3 +1000,10 @@ const requestHouseModelSetup = () => {
 }
 
 requestHouseModelSetup()
+
+const requestServicesSetup = () => {
+  if (setupServicesEffect()) return
+  window.setTimeout(requestServicesSetup, 50)
+}
+
+requestServicesSetup()

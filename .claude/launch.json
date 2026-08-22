@@ -1,0 +1,32 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "maketi",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 1234,
+      "autoPort": true
+    },
+    {
+      "name": "house-editor",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["HouseEditor/serve.mjs"],
+      "port": 4300,
+      "autoPort": true
+    },
+    {
+      "name": "intro-test-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8899", "-d", "/private/tmp/claude-501/-Users-svinchy-maketi/bec8f68b-ada1-46f9-8a96-8c185429e362/scratchpad/introtest"],
+      "port": 8899
+    },
+    {
+      "name": "maketi-static",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-svinchy-maketi/d3672263-c5d1-46d0-ae27-7b5d46d9820e/scratchpad/static-server.mjs"],
+      "port": 4174,
+      "autoPort": true
+    }
+  ]
+}
